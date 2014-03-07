@@ -1,5 +1,6 @@
 /bootstrap/compiled.php
 /vendor
+/public/js/vendor
 /bower_components
 /node_modules
 composer.phar
