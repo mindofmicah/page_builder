@@ -7,7 +7,7 @@ define(['backbone', 'modules/pages/views/modal'], function (Backbone, Modal) {
             this.listenTo(this.model, 'change', this.render);
         },
         render: function () {
-            this.$el.html(this.model.get('id') + '<br>'+this.model.get('content'));
+            this.$el.html(this.model.get('id') + '-' + this.model.get('slug') + '<br>'+this.model.get('content'));
            return this;
         },
         events : {
