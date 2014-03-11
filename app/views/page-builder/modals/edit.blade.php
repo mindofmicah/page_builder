@@ -29,7 +29,11 @@
         <textarea class="form-control" name="" cols="30" rows="10" id="page-content"><%=content%></textarea>
 </div>
 
-                            </div>
+<% if (typeof(id) != 'undefined') { %>
+<div class="text-right"><a href="/pagebuilder/<%=id%>/edit">Edit in advanced editer</a></div>
+<% } %>
+
+</div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss=".modal">Close</button>
                             <button type="submit" class="btn btn-primary">Save Changes</button>
