@@ -4,6 +4,8 @@
                     <div class="modal-content">
                     <form id="aa" action="#">
                             <div class="modal-header">
+                       
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4>My heading</h4>
                             </div>
                             <div class="modal-body">
@@ -35,7 +37,7 @@
 
 </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss=".modal">Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-primary">Save Changes</button>
                             </div>
                             </form>
