@@ -7,6 +7,7 @@ define(['backbone', 'modules/pages/views/modal'], function (Backbone, Modal) {
             this.fields.slug = this.$el.find('#slug');
             this.fields.type = this.$el.find('#type');
             this.fields.content = this.$el.find('#page-content');
+            this.listenTo(this.model, 'change', this.render);
         },
         render: function () {
             this.$el.html(this.model.get('id') + '<br>'+this.model.get('content'));
